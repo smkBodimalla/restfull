@@ -16,7 +16,7 @@ import com.mvc.restfull.entity.PortFolio;
 @Repository
 public class PortFolioDaoImpl implements PortFolioDao {
 	private static final Logger PFILOGGER = LoggerFactory.getLogger(PortFolioDaoImpl.class);
-	@Autowired
+	@Autowired(required=true)
 	private HibernateTemplate ht;
 
 	@Override
